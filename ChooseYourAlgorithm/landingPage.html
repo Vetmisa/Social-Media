@@ -3,10 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -15,16 +12,58 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
-    <script src="components/navbars.js" type="text/javascript" defer></script>
-
-    <title>Hello, world!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/rootVariables.css" />
+    <link rel="stylesheet" href="/ChooseYourAlgorithm/landingPageStyles.css" />
+    <title>Choose Your Algotihm</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar" id="topNavbar">
       <p class="navbar-brand mb-0 h1">Choose Your Algorithm</p>
-      <p>is active</p>
+      <button type="button" class="btn" id="topNavbarButton">
+        <img
+          src="/Icons/power.svg"
+          alt="App is active"
+          width="28"
+          height="28"
+        />
+      </button>
     </nav>
     <h1>Hello, world!</h1>
+
+    <nav class="navbar" id="bottomNavbar">
+      <a href="#">
+        <img src="/Icons/list.svg" alt="Landing page" width="28" height="28" />
+      </a>
+      <a href="#">
+        <img
+          src="/Icons/pie-chart-fill.svg"
+          alt="App is active"
+          width="28"
+          height="28"
+      /></a>
+      <a href="#">
+        <img
+          src="/Icons/funnel-fill.svg"
+          alt="App is active"
+          width="28"
+          height="28"
+      /></a>
+      <a href="#">
+        <img
+          src="/Icons/question-circle-fill.svg"
+          alt="App is active"
+          width="28"
+          height="28"
+      /></a>
+    </nav>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+#topNavbar {
+  background-color: #f9fbfc;
+}
+
+#topNavbarButton {
+  background-color: #f9fbfc;
+}
+
+#bottomNavbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #3e9ab3;
+}
