@@ -27,6 +27,9 @@
 #interestsButton {
   background-color: #72d9db;
 }
+#helperText {
+  color: darkgrey;
+}
 
 #bottomNavbar {
   position: fixed;

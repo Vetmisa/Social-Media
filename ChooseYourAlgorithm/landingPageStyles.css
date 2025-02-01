@@ -30,6 +30,10 @@
   color: black;
 }
 
+#helperText {
+  color: darkgrey;
+}
+
 #bottomNavbar {
   position: fixed;
   bottom: 0;

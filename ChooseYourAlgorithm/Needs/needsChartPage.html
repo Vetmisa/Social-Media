@@ -26,18 +26,41 @@
     <script type="text/javascript">
       window.onload = function () {
         var chart = new CanvasJS.Chart("chartContainer", {
+          backgroundColor: "#f9fbfc",
+
           title: {
-            text: "Top U.S Smartphone Operating Systems By Market Share, Q3 2012",
+            text: "U.S Smartphone OS Market Share, Q3 2012",
+            fontFamily: "Segoe UI",
+            fontWeight: "500",
+          },
+
+          legend: {
+            verticalAlign: "bottom",
+            horizontalAlign: "center",
           },
           data: [
             {
+              indexLabelFontSize: 20,
+              indexLabelFontFamily: "Segoe UI",
+              indexLabelFontColor: "darkgrey",
+              indexLabelLineColor: "darkgrey",
+              indexLabelPlacement: "outside",
               type: "doughnut",
               dataPoints: [
-                { y: 53.37, indexLabel: "Android" },
-                { y: 35.0, indexLabel: "Apple iOS" },
-                { y: 7, indexLabel: "Blackberry" },
-                { y: 2, indexLabel: "Windows Phone" },
-                { y: 5, indexLabel: "Others" },
+                {
+                  y: 53.37,
+                  indexLabel: "Android 53%",
+                },
+                { y: 35.0, indexLabel: "Apple iOS 35%" },
+                {
+                  y: 7,
+                  indexLabel: "Blackberry 7%",
+                },
+                {
+                  y: 2,
+                  indexLabel: "Windows Phone 2%",
+                },
+                { y: 5, indexLabel: "Others 5%" },
               ],
             },
           ],
@@ -47,7 +70,7 @@
       };
     </script>
 
-    <title>Choose Your Algotihm</title>
+    <title>Choose Your Algorihm</title>
   </head>
   <body id="body">
     <nav class="navbar" id="topNavbar">
@@ -56,7 +79,7 @@
         type="button"
         class="btn"
         id="topNavbarButton"
-        href="Inactive/inactiveLandingPage.html"
+        href="/ChooseYourAlgorithm/Inactive/inactiveLandingPage.html"
       >
         <img
           src="/Icons/Active/powerActive.svg"
@@ -69,6 +92,7 @@
     </nav>
 
     <div id="chartContainer" style="height: 300px; width: 100%"></div>
+    <p class="text-center">Im Zeitraum vom 01.02.2025 bis zum 01.02.2025</p>
 
     <nav class="navbar" id="bottomNavbar">
       <a href="/ChooseYourAlgorithm/landingPage.html">
