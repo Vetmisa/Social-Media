@@ -1,0 +1,36 @@
+#body {
+  background-color: #f9fbfc;
+}
+
+#topNavbar {
+  background-color: #f9fbfc;
+  padding-bottom: 0;
+}
+
+#topNavbarButton {
+  background-color: #f9fbfc;
+  padding-bottom: 0;
+}
+
+#isInactiveButtonText {
+  color: #1c598d;
+}
+#algorithmButtonColumn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#needsButton {
+  background-color: #72d9db;
+}
+
+#interestsButton {
+  background-color: #72d9db;
+}
+
+#bottomNavbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1c598d;
+}
