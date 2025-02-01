@@ -17,6 +17,36 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="/ChooseYourAlgorithm/landingPageStyles.css" />
+
+    <!-- CanvasJS Doughnut Chart -->
+    <script
+      type="text/javascript"
+      src="/ChooseYourAlgorithm/canvasjs-chart-3.11.0/canvasjs.min.js"
+    ></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          title: {
+            text: "Top U.S Smartphone Operating Systems By Market Share, Q3 2012",
+          },
+          data: [
+            {
+              type: "doughnut",
+              dataPoints: [
+                { y: 53.37, indexLabel: "Android" },
+                { y: 35.0, indexLabel: "Apple iOS" },
+                { y: 7, indexLabel: "Blackberry" },
+                { y: 2, indexLabel: "Windows Phone" },
+                { y: 5, indexLabel: "Others" },
+              ],
+            },
+          ],
+        });
+
+        chart.render();
+      };
+    </script>
+
     <title>Choose Your Algotihm</title>
   </head>
   <body id="body">
@@ -38,47 +68,12 @@
       </a>
     </nav>
 
-    <div class="container-fluid" id="algorithmButtonColumn">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex">
-            <a
-              type="button"
-              class="btn btn-lg w-100"
-              id="needsButton"
-              href="/ChooseYourAlgorithm/Needs/needsChartPage.html"
-            >
-              Bedürfnisse
-            </a>
-          </div>
-          <p class="text-center">
-            Ermöglicht die Selektion des Algorithmus entsprechend menschlicher
-            Bedürfnisse
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <a
-            type="button"
-            class="btn btn-lg w-100"
-            id="interestsButton"
-            href="/ChooseYourAlgorithm/Interests/interestsChartPage.html"
-          >
-            Interessen
-          </a>
-          <p class="text-center">
-            Ermöglicht die Selektion des Algotithmus entsprechend menschlicher
-            Interessen
-          </p>
-        </div>
-      </div>
-    </div>
+    <div id="chartContainer" style="height: 300px; width: 100%"></div>
 
     <nav class="navbar" id="bottomNavbar">
-      <a href="#">
+      <a href="/ChooseYourAlgorithm/landingPage.html">
         <img
-          src="/Icons/Active/list.svg"
+          src="/Icons/list.svg"
           alt="Navigation Button to Algorithm Selection"
           width="28"
           height="28"
@@ -86,14 +81,14 @@
       </a>
       <a>
         <img
-          src="/Icons/Inactive/pie-chart-fill.svg"
+          src="/Icons/Active/pie-chart-fill.svg"
           alt="Navigation Button to Chart"
           width="28"
           height="28"
       /></a>
-      <a>
+      <a href="#">
         <img
-          src="/Icons/Inactive/funnel-fill.svg"
+          src="/Icons/funnel-fill.svg"
           alt="Navigation Button to Filter"
           width="28"
           height="28"
@@ -106,10 +101,5 @@
           height="28"
       /></a>
     </nav>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
