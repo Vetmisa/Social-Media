@@ -2,7 +2,7 @@
   "statuses": [
     {
       "username": "James Carter",
-      "profile_pic": "C:/Social Media/Social-Media/photos/m1.jpeg"
+      "profile_pic": "photos/m1.jpeg"
     },
     {
       "username": "Sophia Lewis",
@@ -23,6 +23,22 @@
     {
       "username": "Lucas Walker",
       "profile_pic": "photos/m4.jpeg"
+    },
+    {
+      "username": "Ella King",
+      "profile_pic": "photos/download (6).jpeg"
+    },
+    {
+      "username": "Henry Baker",
+      "profile_pic": "photos/m8.jpeg"
+    },
+    {
+      "username": "Evelyn Phillips",
+      "profile_pic": "photos/download (8).jpeg"
+    },
+    {
+      "username": "Noah Anderson",
+      "profile_pic": "photos/m9.jpeg"
     }
   ],
   "posts": [
@@ -42,7 +58,7 @@
       "id": 2,
       "username": "Sophia Lewis",
       "location": "Paris, France",
-      "profile_pic": "https://randomuser.me/api/portraits/women/2.jpg",
+      "profile_pic": "photos/car photoshoot.jpeg",
       "post_image": "photos/p2.jpeg",
       "time": "4 hours ago",
       "content": "A magical evening at the Eiffel Tower.",
@@ -433,7 +449,7 @@
           "likes": 310,
           "shares": 45,
           "comments": [
-           "View all 93 comments"
+           "View all  comments"
           ]
         }
       ]
