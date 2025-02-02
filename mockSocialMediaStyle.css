@@ -368,7 +368,7 @@ main .container {
 .comments {
   margin-top: 10px;
   font-weight: 400;
-  color: #999;
+  color: rgb(88, 88, 88);
 }
 
 .addComments {

@@ -1,0 +1,442 @@
+{
+  "statuses": [
+    {
+      "username": "James Carter",
+      "profile_pic": "C:/Social Media/Social-Media/photos/m1.jpeg"
+    },
+    {
+      "username": "Sophia Lewis",
+      "profile_pic": "photos/car photoshoot.jpeg"
+    },
+    {
+      "username": "Daniel Smith",
+      "profile_pic": "photos/m2.jpeg"
+    },
+    {
+      "username": "Liam Harris",
+      "profile_pic": "photos/m3.jpeg"
+    },
+    {
+      "username": "Mia Thompson",
+      "profile_pic": "photos/celestn4 on ig!.jpeg"
+    },
+    {
+      "username": "Lucas Walker",
+      "profile_pic": "photos/m4.jpeg"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "username": "James Carter",
+      "location": "New York, USA",
+      "profile_pic": "photos/m1.jpeg",
+      "post_image": "photos/p1.jpeg",
+      "time": "2 hours ago",
+      "content": "Enjoying the view from the Empire State Building!",
+      "likes": 153,
+      "shares": 21,
+      "comments": "View all 15 comments"
+    },
+    {
+      "id": 2,
+      "username": "Sophia Lewis",
+      "location": "Paris, France",
+      "profile_pic": "https://randomuser.me/api/portraits/women/2.jpg",
+      "post_image": "photos/p2.jpeg",
+      "time": "4 hours ago",
+      "content": "A magical evening at the Eiffel Tower.",
+      "likes": 221,
+      "shares": 32,
+      "comments": [ "View all 63 comments"
+      ]
+    },
+    {
+      "id": 3,
+      "username": "Daniel Smith",
+      "location": "Tokyo, Japan",
+      "profile_pic":"photos/p4.jpeg",
+      "post_image": "photos/p3.jpeg",
+      "time": "1 day ago",
+      "content": "Exploring Shibuya Crossing at night!",
+      "likes": 198,
+      "shares": 29,
+      "comments": [ "View all 45 comments"
+      ]
+    },
+    {
+      "id": 4,
+      "username": "Liam Harris",
+      "location": "London, UK",
+      "profile_pic": "photos/m3.jpeg",
+      "post_image": "photos/p4.jpeg",
+      "time": "3 days ago",
+      "content": "A walk along the Thames on a sunny afternoon.",
+      "likes": 182,
+      "shares": 18,
+      "comments": [
+       "View all 25 comments"
+      ]
+    },
+    {
+      "id": 5,
+      "username": "Mia Thompson",
+      "location": "Sydney, Australia",
+      "profile_pic": "photos/celestn4 on ig!.jpeg",
+      "post_image": "photos/p5.jpeg",
+      "time": "5 days ago",
+      "content": "Sunset at the Sydney Opera House is breathtaking.",
+      "likes": 240,
+      "shares": 35,
+      "comments": [ "View all 32 comments"
+      ]
+    },
+    {
+      "id": 6,
+      "username": "Lucas Walker",
+      "location": "Rome, Italy",
+      "profile_pic": "photos/m4.jpeg",
+      "post_image": "photos/p6.jpeg",
+      "time": "6 days ago",
+      "content": "Just had the best pizza near the Colosseum!",
+      "likes": 302,
+      "shares": 45,
+      "comments": [ "View all 98 comments"
+      ]
+    },
+    {
+      "id": 7,
+      "username": "Ella King",
+      "location": "Cape Town, South Africa",
+      "profile_pic": "photos/Concert outfits.jpeg",
+      "post_image": "photos/p7.jpeg",
+      "time": "7 days ago",
+      "content": "Hiking up Table Mountain today!",
+      "likes": 520,
+      "shares": 16,
+      "comments": [ "View all 330 comments"
+      ]
+    },
+    {
+      "id": 8,
+      "username": "Henry Baker",
+      "location": "Barcelona, Spain",
+      "profile_pic": "photos/m5.jpeg",
+      "post_image": "photos/p8.jpeg",
+      "time": "1 week ago",
+      "content": "Gaudí’s architecture is just mesmerizing.",
+      "likes": 156,
+      "shares": 24,
+      "comments": [ "View all 15 comments"
+      ]
+    },
+    {
+      "id": 9,
+      "username": "Evelyn Phillips",
+      "location": "Dubai, UAE",
+      "profile_pic": "photos/download (8).jpeg",
+      "post_image": "photos/p9.jpeg",
+      "time": "2 weeks ago",
+      "content": "Visiting the top of Burj Khalifa today!",
+      "likes": 250,
+      "shares": 30,
+      "comments": [
+       "View all 35 comments"
+      ]
+    },
+    {
+      "id": 10,
+      "username": "Noah Anderson",
+      "location": "Berlin, Germany",
+      "profile_pic": "photos/m6.jpeg",
+      "post_image": "photos/p10.jpeg",
+      "time": "2 weeks ago",
+      "content": "Exploring the Berlin Wall today.",
+      "likes": 180,
+      "shares": 22,
+      "comments": [
+         "View all 19 comments"
+      ]
+    },
+    {
+      "id": 11,
+      "username": "Jack Robinson",
+      "location": "Los Angeles, USA",
+      "profile_pic": "photos/m7.jpeg",
+      "post_image": "photos/p11.jpeg",
+      "time": "3 weeks ago",
+      "content": "Jamming with the band at Sunset Boulevard tonight. Nothing beats live music!",
+      "likes": 305,
+      "shares": 47,
+      "comments": [
+        "View all 33 comments"
+      ]
+    },
+    {
+      "id": 12,
+      "username": "Zoe Mitchell",
+      "location": "Austin, Texas, USA",
+      "profile_pic": "photos/download (7).jpeg",
+      "post_image": "photos/p12.jpeg",
+      "time": "4 weeks ago",
+      "content": "Just got back from a weekend of live country music at the Austin City Limits Festival!",
+      "likes": 220,
+      "shares": 38,
+      "comments": [ "View all 29 comments"
+      ]
+    },
+    
+        {
+          "id": 13,
+          "username": "Michael Lee",
+          "location": "Vancouver, Canada",
+          "profile_pic": "photos/m8.jpeg",
+          "post_image": "photos/p13.jpeg",
+          "time": "5 weeks ago",
+          "content": "Spent the afternoon at the beach trying out some new photography techniques.",
+          "likes": 280,
+          "shares": 33,
+          "comments": [
+            "View all 45 comments"
+          ]
+        },
+        {
+          "id": 14,
+          "username": "Ava Martin",
+          "location": "Paris, France",
+          "profile_pic": "photos/download (5).jpeg",
+          "post_image": "photos/p14.jpeg",
+          "time": "6 weeks ago",
+          "content": "Taking a painting class in Montmartre! It’s been so inspiring.",
+          "likes": 195,
+          "shares": 25,
+          "comments": [
+            "View all 25 comments"
+          ]
+        },
+        {
+          "id": 15,
+          "username": "William Carter",
+          "location": "Madrid, Spain",
+          "profile_pic": "photos/m9.jpeg",
+          "post_image": "photos/p15.jpeg",
+          "time": "7 weeks ago",
+          "content": "Just wrapped up a tennis match at the Royal Tennis Club. What a workout!",
+          "likes": 310,
+          "shares": 40,
+          "comments": [
+            "View all 37 comments"
+          ]
+        },
+        {
+          "id": 16,
+          "username": "Sophie Hall",
+          "location": "New York, USA",
+          "profile_pic": "photos/Eyeliner Art.jpeg",
+          "post_image": "photos/p16.jpeg",
+          "time": "8 weeks ago",
+          "content": "Exploring the world of photography today with my DSLR. So much to learn!",
+          "likes": 160,
+          "shares": 22,
+          "comments": [
+            "View all 39 comments"
+          ]
+        },
+        {
+          "id": 17,
+          "username": "Ethan Wright",
+          "location": "Chicago, USA",
+          "profile_pic": "photos/m10.jpeg",
+          "post_image": "photos/p17.jpeg",
+          "time": "9 weeks ago",
+          "content": "Had an amazing time at the Chicago Blues Festival this weekend!",
+          "likes": 275,
+          "shares": 38,
+          "comments": [
+           "View all 27 comments"
+          ]
+        },
+        {
+          "id": 18,
+          "username": "Olivia Roberts",
+          "location": "London, UK",
+          "profile_pic": "photos/download (3).jpeg",
+          "post_image": "photos/p18.jpeg",
+          "time": "10 weeks ago",
+          "content": "Just finished my first yoga class at a studio in Notting Hill. Feeling so relaxed!",
+          "likes": 210,
+          "shares": 29,
+          "comments": [
+            "View all 65 comments"
+          ]
+        },
+        {
+          "id": 19,
+          "username": "Lucas Davis",
+          "location": "San Francisco, USA",
+          "profile_pic": "photos/m11.jpeg",
+          "post_image": "photos/p19.jpeg",
+          "time": "11 weeks ago",
+          "content": "Learning how to skateboard at Ocean Beach today. It’s harder than it looks!",
+          "likes": 120,
+          "shares": 18,
+          "comments": [
+          "View all 17 comments"
+          ]
+        },
+        {
+          "id": 20,
+          "username": "Lily Green",
+          "location": "Amsterdam, Netherlands",
+          "profile_pic": "photos/download (6).jpeg",
+          "post_image": "photos/p20.jpeg",
+          "time": "12 weeks ago",
+          "content": "I just joined a cooking class to learn how to make traditional Dutch pancakes. Yum!",
+          "likes": 230,
+          "shares": 35,
+          "comments": [
+           "View all 35 comments"
+          ]
+        },
+        {
+          "id": 21,
+          "username": "James Carter",
+          "location": "Miami, USA",
+          "profile_pic": "photos/m12.jpeg",
+          "post_image":  "photos/p21.jpeg",
+          "time": "13 weeks ago",
+          "content": "Went for a morning run by the beach. Such a great way to start the day!",
+          "likes": 180,
+          "shares": 25,
+          "comments": [
+             "View all 53 comments"
+          ]
+        },
+        {
+          "id": 22,
+          "username": "Emma White",
+          "location": "Berlin, Germany",
+          "profile_pic": "photos/download (4).jpeg",
+          "post_image": "photos/p22.jpeg",
+          "time": "14 weeks ago",
+          "content": "Exploring some new art galleries in Berlin today. Loving the modern art scene here!",
+          "likes": 150,
+          "shares": 22,
+          "comments": [
+            "View all 39 comments"
+          ]
+        },
+        {
+          "id": 23,
+          "username": "Benjamin Scott",
+          "location": "Toronto, Canada",
+          "profile_pic": "photos/m13.jpeg",
+          "post_image": "photos/p23.jpeg",
+          "time": "15 weeks ago",
+          "content": "Had a cozy afternoon at a local café with a book and a hot chocolate.",
+          "likes": 135,
+          "shares": 19,
+          "comments": [
+           "View all 13 comments"
+          ]
+        },
+        {
+          "id": 24,
+          "username": "Sophia Lewis",
+          "location": "Sydney, Australia",
+          "profile_pic": "photos/download.jpeg",
+          "post_image": "photos/p24.jpeg",
+          "time": "16 weeks ago",
+          "content": "Diving in the Great Barrier Reef today. The underwater world is unreal!",
+          "likes": 290,
+          "shares": 42,
+          "comments": [
+             "View all 22 comments"
+          ]
+        },
+        {
+          "id": 25,
+          "username": "Noah Anderson",
+          "location": "Cape Town, South Africa",
+          "profile_pic": "photos/m14.jpeg",
+          "post_image": "photos/p25.jpeg",
+          "time": "17 weeks ago",
+          "content": "Climbed Table Mountain today! The view of the city is absolutely stunning.",
+          "likes": 220,
+          "shares": 33,
+          "comments": [ "View all 35 comments"
+          ]
+        },
+        {
+          "id": 26,
+          "username": "Olivia Roberts",
+          "location": "Tokyo, Japan",
+          "profile_pic": "photos/download (1).jpeg",
+          "post_image": "photos/p26.jpeg",
+          "time": "18 weeks ago",
+          "content": "Sushi-making class in Tokyo today. I think I’m getting the hang of it!",
+          "likes": 275,
+          "shares": 36,
+          "comments": [ "View all 62 comments"
+          ]
+        },
+        {
+          "id": 27,
+          "username": "Lucas Walker",
+          "location": "Paris, France",
+          "profile_pic": "photos/m15.jpeg",
+          "post_image": "photos/p27.jpeg",
+          "time": "19 weeks ago",
+          "content": "Caught the sunset by the Seine River today. Paris never gets old.",
+          "likes": 250,
+          "shares": 40,
+          "comments": [
+           "View all 29 comments"
+          ]
+        },
+        {
+          "id": 28,
+          "username": "Isabella Green",
+          "location": "Rome, Italy",
+          "profile_pic": "photos/download (2).jpeg",
+          "post_image": "photos/p28.jpeg",
+          "time": "20 weeks ago",
+          "content": "Had an amazing pasta cooking class in Rome. I feel like a true Italian chef now!",
+          "likes": 330,
+          "shares": 50,
+          "comments": [
+           "View all 35 comments"
+          ]
+        },
+        {
+          "id": 29,
+          "username": "Jack Robinson",
+          "location": "Los Angeles, USA",
+          "profile_pic": "photos/m16.jpeg",
+          "post_image": "photos/p29.jpeg",
+          "time": "21 weeks ago",
+          "content": "Had an unforgettable concert at the Hollywood Bowl last night!",
+          "likes": 340,
+          "shares": 48,
+          "comments": [
+            "View all 55 comments"
+          ]
+        },
+        {
+          "id": 30,
+          "username": "Sophia Green",
+          "location": "Barcelona, Spain",
+          "profile_pic": "photos/GIFT GUIDE FOR THE WELLNESS GIRL.jpeg",
+          "post_image": "photos/p30.jpeg",
+          "time": "22 weeks ago",
+          "content": "Took a walking tour of Gaudí’s architecture today. His work is truly awe-inspiring.",
+          "likes": 310,
+          "shares": 45,
+          "comments": [
+           "View all 93 comments"
+          ]
+        }
+      ]
+    }
+    
+  
