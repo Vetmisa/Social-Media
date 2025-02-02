@@ -5,6 +5,8 @@
 #topNavbar {
   background-color: #f9fbfc;
   padding-bottom: 0;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 #topNavbarButton {
@@ -39,4 +41,6 @@
   bottom: 0;
   width: 100%;
   background-color: #1c598d;
+  padding-left: 16px;
+  padding-right: 16px;
 }
