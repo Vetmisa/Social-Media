@@ -12,8 +12,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <!-- Our CSS -->
     <link rel="stylesheet" href="/ChooseYourAlgorithm/landingPageStyles.css" />
-    <title>Choose Your Algotihm</title>
+
+    <title>Choose Your Algorihm</title>
   </head>
   <body id="body">
     <nav class="navbar" id="topNavbar">
@@ -22,7 +25,7 @@
         type="button"
         class="btn"
         id="topNavbarButton"
-        href="Inactive/inactiveLandingPage.html"
+        href="/ChooseYourAlgorithm/Inactive/inactiveLandingPage.html"
       >
         <img
           src="/Icons/Active/powerActive.svg"
@@ -34,47 +37,10 @@
       </a>
     </nav>
 
-    <div class="container-fluid" id="contentGrid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex">
-            <a
-              type="button"
-              class="btn btn-lg w-100"
-              id="needsButton"
-              href="/ChooseYourAlgorithm/Needs/needsChartPage.html"
-            >
-              Bedürfnisse
-            </a>
-          </div>
-          <p class="text-center" id="helperText">
-            Ermöglicht die Selektion des Algorithmus entsprechend menschlicher
-            Bedürfnisse
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <a
-            type="button"
-            class="btn btn-lg w-100"
-            id="interestsButton"
-            href="/ChooseYourAlgorithm/Interests/interestsChartPage.html"
-          >
-            Interessen
-          </a>
-          <p class="text-center" id="helperText">
-            Ermöglicht die Selektion des Algotithmus entsprechend menschlicher
-            Interessen
-          </p>
-        </div>
-      </div>
-    </div>
-
     <nav class="navbar" id="bottomNavbar">
-      <a href="#">
+      <a href="/ChooseYourAlgorithm/landingPage.html">
         <img
-          src="/Icons/Active/list.svg"
+          src="/Icons/list.svg"
           alt="Navigation Button to Algorithm Selection"
           width="28"
           height="28"
@@ -82,14 +48,14 @@
       </a>
       <a>
         <img
-          src="/Icons/Inactive/pie-chart-fill.svg"
+          src="/Icons/Active/pie-chart-fill.svg"
           alt="Navigation Button to Chart"
           width="28"
           height="28"
       /></a>
-      <a>
+      <a href="/ChooseYourAlgorithm/Needs/Filters/needsSwitchFilterPage.html">
         <img
-          src="/Icons/Inactive/funnel-fill.svg"
+          src="/Icons/funnel-fill.svg"
           alt="Navigation Button to Filter"
           width="28"
           height="28"
@@ -102,10 +68,5 @@
           height="28"
       /></a>
     </nav>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
