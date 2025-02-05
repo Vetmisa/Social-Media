@@ -162,53 +162,7 @@ main {
 }
 
 
-.col-3 h4 {
-  color: rgb(100, 100, 100);
-}
 
-.col-3 .card {
-  margin-bottom: 20px;
-  position: relative;
-  width: 100%;
-  /* min-height: 400px; */
-  display: inline-block;
-}
-
-.col-3 .card .top {
-  padding: 10px 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.col-3 .card .top a {
-  color: #1d92ff;
-}
-
-.col-3 .card .bottom {
-  padding: 10px 20px;
-}
-
-.col-3 .card .top .userDetails {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.col-3 .card .top .userDetails h3 {
-  font-size: 16px;
-  color: #4d4d4f;
-  font-weight: 500;
-  line-height: 1em;
-}
-
-.col-3 .card .top .userDetails h3 span {
-  font-size: 0.75em;
-}
-
-.col-3 .card .top .userDetails h3 span {
-  font-size: 0.75em;
-}
 
 
 .col-9 .card .top {
@@ -404,13 +358,10 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-  .col-9 {
-    width: 100%;
-    background: #fafafa;
-  }
-
   .col-3 {
-    display: none;
+    display: block; 
+    width: 100%; 
+    order: 2; 
   }
 }
 
@@ -484,25 +435,43 @@ main .container {
   width: 100%; 
 }
 
-.col-3 {
-  width: 25%;
-  min-width: 280px;
+
+.filter-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
+
 .filter-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin: 20px auto;
-   font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    
+  width: 90%; /* Adjust width for better alignment */
+  margin: 10px auto; /* Center it */
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
+.filter-container select, 
+.filter-container input, 
+.filter-container button {
+  width: 100%; /* Ensure they take full width */
+  margin-bottom: 10px; /* Add spacing between elements */
+}
+
+
 .filter-container label {
   font-size: 16px;
   font-weight: bold;
@@ -556,7 +525,6 @@ font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu,
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   width: 300px;
-
   z-index: 1100; 
 }
 
@@ -575,20 +543,3 @@ button:hover {
   
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    width: 100% !important;
-    padding: 0 10px; /* Add small padding instead of margin */
-  }
-
-  main .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px; /* Prevent excessive left/right spacing */
-  }
-
-  .col-9 {
-    width: 100%;
-    max-width: none;
-  }
-}

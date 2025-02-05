@@ -72,111 +72,8 @@
   <main>
     <div class="container">
       <div class="col-9">
-        <div class="statuses" id="statusContainer">
-
-        </div>
-
-        <div id="postContainer">
-
-        </div>
-      </div>
-
-      <div class="col-3">
-        <div class="card">
-          <h4>Suggestions For You</h4>
-          <div class="top">
-            <div class="userDetails">
-              <div class="profilepic">
-                <div class="profile_img">
-                  <div class="image">
-                    <img src="photos\Eyeliner Art.jpeg" alt="img12">
-                  </div>
-                </div>
-              </div>
-              <h3>Anna smith<br>
-                <span>Follows You</span>
-              </h3>
-            </div>
-            <div>
-              <a href="#" class="Follow">Follow
-              </a>
-            </div>
-          </div>
-          <div class="top">
-            <div class="userDetails">
-              <div class="profilepic">
-                <div class="profile_img">
-                  <div class="image">
-                    <img src="photos\Concert outfits.jpeg" alt="img13">
-                  </div>
-                </div>
-              </div>
-              <h3>Bella Glenn<br>
-                <span>Follows You</span>
-              </h3>
-            </div>
-            <div>
-              <a href="#" class="Follow">Follow
-              </a>
-            </div>
-          </div>
-          <div class="top">
-            <div class="userDetails">
-              <div class="profilepic">
-                <div class="profile_img">
-                  <div class="image">
-                    <img src="photos\m15.jpeg" alt="img14">
-                  </div>
-                </div>
-              </div>
-              <h3>Paul James<br>
-                <span>Followed by Keshav Agarwal</span>
-              </h3>
-            </div>
-            <div>
-              <a href="#" class="Follow">Follow</a>
-            </div>
-          </div>
-          <div class="top">
-            <div class="userDetails">
-              <div class="profilepic">
-                <div class="profile_img">
-                  <div class="image">
-                    <img src="photos\m11.jpeg" alt="img15">
-                  </div>
-                </div>
-              </div>
-              <h3>Amar Dallas<br>
-                <span>Follows You</span>
-              </h3>
-            </div>
-            <div>
-              <a href="#" class="Follow">Follow
-              </a>
-            </div>
-          </div>
-          <div class="top">
-            <div class="userDetails">
-              <div class="profilepic">
-                <div class="profile_img">
-                  <div class="image">
-                    <img src="photos\m14.jpeg" alt="img16" class="cover">
-                  </div>
-                </div>
-              </div>
-              <h3>Roy Lima<br>
-                <span>Followed by Keshav Agarwal</span>
-              </h3>
-            </div>
-            <div>
-              <a href="#" class="Follow"> Follow
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-
+        <div class="statuses" id="statusContainer"> </div>
+        
         <div class="filter-container">
           <label for="categoryFilter">Choose Interests:</label>
           <select id="categoryFilter">
@@ -193,9 +90,9 @@
           <label for="interestInput"></label>
           <input type="text" id="interestInput" placeholder="Enter percentages (e.g., Fashion:40, Travel:30)">
           <button id="applyFilterBtn">Apply</button>
-        </div>
      
-        <div class="filter-container">
+     
+       
           <label for="needFilter">Choose Needs:</label>
           <select id="needFilter">
               <option value="all">All Needs</option>
@@ -217,12 +114,18 @@
           <input type="text" id="needInput" placeholder="Influencers:50, Sports:50">
           <button id="applyNeedFilterBtn">Apply</button>
       </div>
-    </div>
-  </div>
+   
+
+        <div id="postContainer">
+
+        </div>
+      </div>
+
+    
+
 
   </main>
 
-  
 
   <script>
     function closeModal() {
@@ -275,6 +178,7 @@
                     const postElement = document.createElement('div');
                     postElement.classList.add('card');
                     postElement.innerHTML = `
+                    
                         <div class="top">
                             <div class="userDetails">
                                 <div class="profilepic">
