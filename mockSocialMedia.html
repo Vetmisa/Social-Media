@@ -2,11 +2,22 @@
 <html lang="en">
 
 <head>
+
   <link rel="stylesheet" href="mockSocialMediaStyle.css" />
   <title>Instagram Clone</title>
 </head>
 
 <body>
+  
+  <div id="customModal" class="modal-overlay">
+    <div class="modal-content">
+        <h2>Choose Your Algorithm</h2>
+        <p> Yohoo the "Choose Your Algorithm" app is active.</p>
+        <button onclick="closeModal()">OK</button>
+    </div>
+</div>
+
+
   <header>
     <nav class="navbar">
       <div class="container">
@@ -16,6 +27,7 @@
               height="40px" length="90 px">
           </a>
         </div>
+
         <div class="searchbar">
           <input type="text" placeholder="Search">
           <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220609093658/search-200x200.png" height="20"
@@ -55,6 +67,8 @@
       </div>
     </nav>
   </header>
+
+
   <main>
     <div class="container">
       <div class="col-9">
@@ -66,6 +80,7 @@
 
         </div>
       </div>
+
       <div class="col-3">
         <div class="card">
           <h4>Suggestions For You</h4>
@@ -158,17 +173,67 @@
               </a>
             </div>
           </div>
+
         </div>
+
+
+        <div class="filter-container">
+          <label for="categoryFilter">Choose Interests:</label>
+          <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Mode (Fashion)">Fashion</option>
+            <option value="Liebe (Love)"> Love</option>
+            <option value="Fitness">Fitness</option>
+            <option value="Kunst (Art)">Art</option>
+            <option value="Reise (Travel)">Travel</option>
+            <option value="Musik (Music)">Music</option>
+            <option value="Film (Movies)">Movies</option>
+            <option value="Gaming">Gaming</option>
+          </select>
+          <label for="interestInput"></label>
+          <input type="text" id="interestInput" placeholder="Enter percentages (e.g., Fashion:40, Travel:30)">
+          <button id="applyFilterBtn">Apply</button>
+        </div>
+     
+        <div class="filter-container">
+          <label for="needFilter">Choose Needs:</label>
+          <select id="needFilter">
+              <option value="all">All Needs</option>
+              <option value="Influencers">Influencers</option>
+              <option value="Friends and Family">Friends and Family</option>
+              <option value="Sports">Sports</option>
+              <option value="Inspiration">Inspiration</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="News">News</option>
+              <option value="Search">Search</option>
+              <option value="Trends">Trends</option>
+              <option value="Shopping">Shopping</option>
+              <option value="Livestreams">Livestreams</option>
+              <option value="Work">Work</option>
+              <option value="Networking">Networking</option>
+              <option value="Discussions">Discussions</option>
+          </select>
+          <label for="needInput">Enter Need Percentages:</label>
+          <input type="text" id="needInput" placeholder="Influencers:50, Sports:50">
+          <button id="applyNeedFilterBtn">Apply</button>
       </div>
+    </div>
+  </div>
 
   </main>
 
+  
+
   <script>
+    function closeModal() {
+    document.getElementById("customModal").style.display = "none";
+}
+
     // Fetch the JSON data from the external file
     fetch('postData.json')
       .then(response => response.json())
       .then(data => {
-        console.log("Fetched Data:", data); // Debugging line
+        console.log("Fetched Data:", data); 
         const statusContainer = document.getElementById('statusContainer');
         const postContainer = document.getElementById('postContainer');
 
@@ -189,108 +254,122 @@
         `;
           statusContainer.appendChild(statusElement);
         });
-        // Render posts
-        data.posts.forEach(post => {
-          const postElement = document.createElement('div');
-          postElement.classList.add('card');
-          postElement.innerHTML = `
-  
-        <div class="top">
-          <div class="userDetails">
-            <div class="profilepic">
-              <div class="profile_img">
-                <div class="image">
-                  <img src="${post.profile_pic}" alt="${post.username}" />
-                </div>
-              </div>
-            </div>
-            <h3>
-              ${post.username}
-              <br />
-              <span>${post.location}</span>
-            </h3>
-          </div>
-        </div>
-        <div class="imgBx">
-          <img src="${post.post_image}" alt="Post Image" class="cover" />
-        </div>
-        <div class="bottom">
-           <div class="actionBtns">
-    <div class="left">
-        <span class="heart" onclick="toggleLike(this)">
-            <img src="photos/heart.png" alt="Like" width="24" height="24">
-        </span>
-        <span class="comment">
-            <img src="photos/chat.png" alt="Comment" width="24" height="24">
-        </span>
-        <span class="send">
-            <img src="photos/send.png" alt="Send" width="24" height="24">
-        </span>
-    </div>
-    <div class="right">
-        <span class="save" onclick="toggleSave(this)">
-            <img src="photos/save-instagram.png" alt="Save" width="24" height="24">
-        </span>
-    </div>
-</div>
+    }) 
 
-</div>
-          <p class="likes"> <b>${post.likes} likes </b></p>
-          <p class="message"><b>${post.username}</b> ${post.content}</p>
-           
-          <a href="#">
-               <h4 class="comments"> ${post.comments} </h4>
-                        </a>
-          
-            <a href="#">
-                            <h5 class="postTime">9 hours ago</h5>
-                        </a>
-                        <div class="addComments">
-                            <div class="reaction">
+        // Render posts
+        document.addEventListener("DOMContentLoaded", function () {
+    fetch('postDatacategories.json')
+        .then(response => response.json())
+        .then(data => {
+            const postContainer = document.getElementById('postContainer');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const interestInput = document.getElementById('interestInput');
+            const applyFilterBtn = document.getElementById('applyFilterBtn');
+            const needFilter = document.getElementById('needFilter');
+            const needInput = document.getElementById('needInput');
+            const applyNeedFilterBtn = document.getElementById('applyNeedFilterBtn');
+
+            function renderPosts(filteredPosts) {
+                postContainer.innerHTML = "";
+                filteredPosts.forEach(post => {
+                    const postElement = document.createElement('div');
+                    postElement.classList.add('card');
+                    postElement.innerHTML = `
+                        <div class="top">
+                            <div class="userDetails">
+                                <div class="profilepic">
+                                    <div class="profile_img">
+                                        <div class="image">
+                                            <img src="${post.profile_pic}" alt="${post.username}" />
+                                        </div>
+                                    </div>
+                                </div>
                                 <h3>
-                                  <i class="far fa-smile"></i>
-                               </h3>
+                                    ${post.username}
+                                    <br />
+                                    <span>${post.location}</span>
+                                </h3>
                             </div>
-                            <input type="text"
-                                   class="text" 
-                                   placeholder="Add a comment...">
-                            <a href="#">Post</a>
                         </div>
-        </div>     </div>
-        
-      `;
-          postContainer.appendChild(postElement);
-        });
-      })
-      .catch(error => console.error('Error loading data:', error));
+                        <div class="imgBx">
+                            <img src="${post.post_image}" alt="Post Image" class="cover" />
+                        </div>
+                        <div class="bottom">
+                            <p class="likes"> <b>${post.likes} likes </b></p>
+                            <p class="message"><b>${post.username}</b> ${post.content}</p>
+                            <a href="#">
+                                <h4 class="comments"> ${post.comments} </h4>
+                            </a>
+                            <a href="#">
+                                <h5 class="postTime">${post.time}</h5>
+                            </a>
+                        </div>
+                    `;
+                    postContainer.appendChild(postElement);
+                });
+            }
+
+            applyFilterBtn.addEventListener("click", function () {
+                const interestValues = interestInput.value.split(',').reduce((acc, val) => {
+                    const [category, percentage] = val.split(':').map(item => item.trim());
+                    acc[category] = parseInt(percentage, 10) || 0;
+                    return acc;
+                }, {});
+
+                let filteredPosts = [];
+                Object.keys(interestValues).forEach(category => {
+                    const categoryPosts = data.filter(post => post.category === category);
+                    const numPosts = Math.ceil((interestValues[category] / 100) * categoryPosts.length);
+                    filteredPosts = filteredPosts.concat(categoryPosts.slice(0, numPosts));
+                });
+
+                renderPosts(filteredPosts.length ? filteredPosts : data);
+            });
+
+            applyNeedFilterBtn.addEventListener("click", function () {
+                const needValues = needInput.value.split(',').reduce((acc, val) => {
+                    const [need, percentage] = val.split(':').map(item => item.trim());
+                    acc[need] = parseInt(percentage, 10) || 0;
+                    return acc;
+                }, {});
+
+                let filteredNeeds = [];
+                Object.keys(needValues).forEach(need => {
+                    const needPosts = data.filter(post => post.need === need);
+                    const numPosts = Math.ceil((needValues[need] / 100) * needPosts.length);
+                    filteredNeeds = filteredNeeds.concat(needPosts.slice(0, numPosts));
+                });
+
+                renderPosts(filteredNeeds.length ? filteredNeeds : data);
+            });
+
+            renderPosts(data);
+        })
+        .catch(error => console.error('Error loading data:', error));
+});
 
     function toggleLike(element) {
-      let img = element.querySelector("img");
-      if (img.src.includes("heart.png")) {
-        img.src = "photos/heart (1).png"; // New liked image
-      } else {
-        img.src = "photos/heart.png"; // Default like image
-      }
-    }
-    
-function toggleSave(element) {
-    let img = element.querySelector("img");
-    if (img.src.includes("save-instagram.png")) {
-        img.src = "photos/save-instagram 2.png"; // New saved image
-    } else {
-        img.src = "photos/save-instagram.png"; // Default save image
-    }
-}
-   
+            let img = element.querySelector("img");
+            if (img.src.includes("heart.png")) {
+              img.src = "photos/heart (1).png"; // New liked image
+            } else {
+              img.src = "photos/heart.png"; // Default like image
+            }
+          }
 
-
+          function toggleSave(element) {
+            let img = element.querySelector("img");
+            if (img.src.includes("save-instagram.png")) {
+              img.src = "photos/save-instagram 2.png"; // New saved image
+            } else {
+              img.src = "photos/save-instagram.png"; // Default save image
+            }
+          }
+      
+  
 
   </script>
-</body>
 
-</html>
-
-<!-- Our Footer Section will start from Here -->
 <div class="footer">
   <a class="footer-section" href="#">About</a>
   <a class="footer-section" href="#">Help</a>
@@ -312,5 +391,4 @@ function toggleSave(element) {
 </div>
 </main>
 </body>
-
 </html>
