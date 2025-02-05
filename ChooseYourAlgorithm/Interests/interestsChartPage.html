@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Our CSS -->
+    <link
+      rel="stylesheet"
+      href="/ChooseYourAlgorithm/chooseYourAlgorithmStyles.css"
+    />
+
+    <!-- CanvasJS Doughnut Chart -->
+    <script
+      type="text/javascript"
+      src="/ChooseYourAlgorithm/canvasjs-chart-3.11.0/canvasjs.min.js"
+    ></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          backgroundColor: "#f9fbfc",
+
+          title: {
+            text: "Deine Aktivitäten",
+            fontFamily: "Segoe UI",
+            fontWeight: "500",
+          },
+
+          legend: {
+            verticalAlign: "bottom",
+            horizontalAlign: "center",
+          },
+          data: [
+            {
+              indexLabelFontSize: 20,
+              indexLabelFontFamily: "Segoe UI",
+              indexLabelFontColor: "darkgrey",
+              indexLabelLineColor: "darkgrey",
+              indexLabelPlacement: "outside",
+              type: "doughnut",
+              dataPoints: [
+                {
+                  y: 40,
+                  indexLabel: "Mode 40%",
+                },
+                { y: 35.0, indexLabel: "Liebe 35%" },
+                {
+                  y: 15,
+                  indexLabel: "Sport 7%",
+                },
+                {
+                  y: 2,
+                  indexLabel: "Reisen 2%",
+                },
+                { y: 8, indexLabel: "Andere 8%" },
+              ],
+            },
+          ],
+        });
+
+        chart.render();
+      };
+    </script>
+
+    <title>Choose Your Algorihm</title>
+  </head>
+  <body id="body">
+    <nav class="navbar" id="topNavbar">
+      <p class="navbar-brand mb-0 h1">Choose Your Algorithm</p>
+      <a
+        type="button"
+        class="btn"
+        id="topNavbarButton"
+        href="/ChooseYourAlgorithm/Inactive/inactiveLandingPage.html"
+      >
+        <img
+          src="/Icons/Active/powerActive.svg"
+          alt="App is active"
+          width="28"
+          height="28"
+        />
+        <p id="isActiveButtonText">An</p>
+      </a>
+    </nav>
+
+    <div id="chartContainer" style="height: 300px; width: 100%"></div>
+    <p class="text-center">Im Zeitraum vom 01.02.2025 bis zum 01.02.2025</p>
+
+    <nav class="navbar" id="bottomNavbar">
+      <a href="/ChooseYourAlgorithm/landingPage.html">
+        <img
+          src="/Icons/list.svg"
+          alt="Navigation Button to Algorithm Selection"
+          width="28"
+          height="28"
+        />
+      </a>
+      <a>
+        <img
+          src="/Icons/Active/pie-chart-fill.svg"
+          alt="Navigation Button to Chart"
+          width="28"
+          height="28"
+      /></a>
+      <a
+        href="/ChooseYourAlgorithm/Interests/Filters/interestsSwitchFilterPage.html"
+      >
+        <img
+          src="/Icons/funnel-fill.svg"
+          alt="Navigation Button to Filter"
+          width="28"
+          height="28"
+      /></a>
+      <a href="/ChooseYourAlgorithm/Interests/questionsPage.html">
+        <img
+          src="/Icons/question-circle-fill.svg"
+          alt="Navigation Button to Help"
+          width="28"
+          height="28"
+      /></a>
+    </nav>
+  </body>
+</html>

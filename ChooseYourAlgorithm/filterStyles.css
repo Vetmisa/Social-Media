@@ -1,0 +1,9 @@
+#changeButton {
+  background-color: #72d9db;
+  color: black;
+  margin-left: 12px;
+}
+
+#rangeInput {
+  width: 100%;
+}
